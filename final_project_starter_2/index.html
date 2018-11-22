@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jill Schultz Design</title>
+  <!-- Below is the link to your CSS file -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Below is a link for Font Awesome! -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+  <div class="hamburger menu-hide showMenu">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  <header>
+    <div class="hero_text">
+      <h1>Jill Schultz</h1>
+      <h2 id="artwork">Let's Make Artwork</h2>
+      <r width="200" align="right">
+      <!-- <h3 id="float">let's make artwork</h3> -->
+    </div>
+    <nav>
+      <div id="work"><a href="final_WORK/work.html">Work</a>
+      </div>
+      <div id="about"><a href="final_ABOUT/about.html">About</a>
+      </div>
+    </nav>
+    <div class="vertical_line">
+    </div>
+  </header>
+  <section class="container">
+  <div class="row first">
+    <h2>What can I do for you</h2>
+  </div>
+  <div class="row second">
+
+    <div class="box-item showModal" id="box1">
+      <div class="cta_box showModal">
+        <h5>Get Quote</h5>
+      </div>
+      <h4>Website</h4>
+      <h5>Design & Development</h5>
+      <p>Fic tetum quatis dolupta turepta tempore
+  etur rem as et deliae por aliquost et mossi</p>
+    </div>
+     <div class="box-item showModal" id="box2">
+       <div class="cta_box-logo">
+         <h5>Get Quote</h5>
+       </div>
+       <h4>Logo & Branding</h4>
+       <h5>Packaged & Delivered</h5>
+       <p>Fic tetum quatis dolupta turepta tempore
+ etur rem as et deliae por aliquost et mossi</p>
+     </div>
+    </div>
+  </div>
+  <div class="row third">
+     <div class="box-item showModal" id="box3">
+       <div class="cta_box-print">
+         <h5>Get Quote</h5>
+       </div>
+       <h4>Print</h4>
+       <h5>Flyers, Posters, Brochures, etc.</h5>
+       <p>Fic tetum quatis dolupta turepta tempore
+ etur rem as et deliae por aliquost et mossi</p>
+     </div>
+     <div class="box-item showModal" id="box4">
+       <div class="cta_box-digital">
+         <h5>Get Quote</h5>
+       </div>
+       <h4>Digital Artwork</h4>
+       <h5>Commissioned</h5>
+       <p>Fic tetum quatis dolupta turepta tempore
+ etur rem as et deliae por aliquost et mossi</p>
+    </div>
+  </div>
+  <div class="row fourth">
+   <!-- No content here -->
+  </div>
+  </section>
+  <section class="sticky-footer">
+    <nav class="contact_button sticky-button">
+      <a href="#jump">Contact</a>
+    </nav>
+  </section>
+  <footer>
+    <nav class="contact_button showModal">
+      <a name="jump" href="#">Contact</a>
+    </nav>
+    <div class="footer_copy_container">
+      <div class="footer_copy">
+        <p class="footer_headers">Email</p>
+        <p>jill.schultz (at) gmail.com</p>
+        <br>
+        <p class="footer_headers">Call Me</p>
+        <p>+1 443 739 9395</p>
+      </div>
+      <div class="footer_heythere">
+          <h3>hey there, call me</h3>
+          <h4 id="footer_h4">or better yet, text me</h4>
+      </div>
+    </div>
+  </footer>
+  <div class="terms">
+    <p class="footer_headers" id="terms_text">terms & conditions | &copy; 2018 Jill Schultz</p>
+  </div>
+</body>
+<div class="modal-background">
+  <div class="modal-content">
+    <h3>Yeah, Let's Talk!</h3>
+    <h4>Tell me what you have in mind.</h4>
+    <form action="">
+      <input type="text" id="name" placeholder="Full Name">
+      <input type="email" placeholder="Email">
+      <textarea placeholder="Message"></textarea>
+      <div id='dropdown'>
+      <p>What service are you interested in?</p>
+      <select name="services" id="servicesInterest">
+          <option value="website">Website</option>
+          <option value="logo_branding">Logo & Branding</option>
+          <option value="miscellaneous">Miscellaneous</option>
+          <option value="digital-artwork">Digital Artwork</option>
+      </select>
+      </div>
+    </form>
+    <button id="submit" type="submit">Submit</button>
+    <button id="close">X</button>
+  </div>
+</div>
+<div class="menu-modal-background">
+  <div class="menu-modal-content">
+    <h3><a href="index.html">Home</a></h3>
+    <h3><a href="final_ABOUT/about.html">About</a></h3>
+    <h3><a href="final_WORK/work.html">Work</a></h3>
+    <h3><a href="#">Contact</a></h3>
+    <br>
+    <h4>jill.schultz (at) gmail.com</h4>
+    <button id="close-menu">X</button>
+  </div>
+</div>
+<script
+src="http://code.jquery.com/jquery-3.2.1.min.js"
+integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</html>
