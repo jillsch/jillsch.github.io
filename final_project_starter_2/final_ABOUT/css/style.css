@@ -137,6 +137,7 @@ header nav a {
 
 .nav_bar_image img{
   max-width: 100vw;
+  min-height: 60px;
 }
 
 #home {
@@ -181,6 +182,10 @@ nav a:hover {
   height: auto;
 }
 
+#dance_image_mobile {
+  display: none;
+}
+
 .about_container {
   display: flex;
   flex-direction: row;
@@ -212,7 +217,7 @@ nav a:hover {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-
+  width: 600px;
 
 }
 
@@ -439,11 +444,10 @@ select {
   width: 70%;
 }
 
-/* pop up menu */
+/* pop up menu * original */
 
 .hamburger {
   cursor: pointer;
-  /* display: block; */
   position: fixed;
   top: 20px;
   right: 20px;
@@ -459,7 +463,6 @@ select {
 .line:last-child {
   margin-bottom: 0;
 }
-
 
 
 .menu-modal-background {
@@ -536,9 +539,50 @@ select {
 
 /* about page css media queries */
 
+@media screen and (max-width: 1100px) {
+  .about_container {
+    width: 700px;
+    height: 700px;
+    display: block;
+  }
+
+  .container_box {
+    margin: 0 100px 50px 100px;
+  }
+
+  #dance_image {
+    margin: 120px 100px 50px 100px;
+  }
+}
+
+
 @media screen and (max-width: 930px) {
   .footer_heythere {
     margin-right: 4%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about_container {
+    width: 100%;
+    height: 80%;
+    margin: auto;
+  }
+
+  .hi_box h1 {
+    font-size: 85px;
+  }
+
+  .hi_box {
+    margin-top: -40px;
+  }
+
+  /* .container_box {
+    margin: 0;
+  } */
+
+  #dance_image {
+    margin: 50px auto 20px auto;
   }
 }
 
@@ -551,6 +595,7 @@ select {
   footer {
     height: 380px;
   }
+
   .footer_copy {
     text-align: center;
   }
@@ -568,6 +613,44 @@ select {
 #about {
   display: none;
 }
+
+#home {
+  display: none;
+}
+
+.nav_bar_image img {
+  display: none;
+}
+
+.nav_bar_image {
+  background-color: black;
+  height: 60px;
+  width: 100%;
+}
+
+.hi_box h1 {
+  font-size: 65px;
+}
+
+.hi_box {
+  width: 100%;
+}
+
+.about_container {
+  border: none;
+  width: auto;
+}
+
+#dance_image img {
+  /* margin: 80px 0 50px 0px; */
+  max-width: 100%;
+}
+
+.container_box {
+  margin: 80px 10% 0px 10%;
+}
+
+
 
 @media screen and (max-width: 456px) {
   .modal-content p {

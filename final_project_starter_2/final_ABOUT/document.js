@@ -54,3 +54,13 @@ $('#close-menu').on('click', function () {
   $('.menu-modal-background').fadeOut();
   $('.hamburger').css("display", "none").hide().fadeIn();
 });
+
+// pop up contact box
+
+$('.showModal').on('click', function () {
+  $('.modal-background').css("display", "flex").hide().fadeIn();
+});
+
+$('#close').on('click', function () {
+  $('.modal-background').fadeOut();
+});
