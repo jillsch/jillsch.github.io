@@ -1,0 +1,282 @@
+@font-face {
+  font-family: "Garamond8";
+  src: url('../EBGaramond08-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Garamon8italic";
+  src: url('../EBGaramond08-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Garamon12";
+  src: url('../EBGaramond12-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Garamon12italic";
+  src: url('../EBGaramond12-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Abel";
+  src: url('../abel-regular.ttf') format('truetype');
+}
+
+
+/* //navigation bar// */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  height: 120px;
+}
+
+.logo-box {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.logo-box img {
+  max-height: 70px;
+}
+
+.nav-box {
+  line-height: 50px;
+  flex-grow: 20;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-box-links a {
+  padding: 0 25px;
+  font-family: "Garamond12"; serif;
+  font-size: 15px;
+  color: #676767;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-box-links a:hover {
+  color: black;
+}
+
+.phonenumber-box {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20px;
+}
+
+/* START Header code */
+
+h1 {
+  font-family: "Abel"; sans-serif;
+  font-size: 30px;
+  color: black;
+  letter-spacing: 3px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Garamon8italic"; serif;
+  font-size: 25px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  color: white;
+}
+
+h3 {
+  font-family: "Abel"; sans-serif;
+  font-size: 18px;
+  color: #676767;
+  letter-spacing: 1px;
+  font-weight: lighter;
+}
+
+h5 {
+  font-family: "Garamon12"; serif;
+  font-size: 15px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: black;
+}
+
+p {
+  font-family: "Garamond8"; serif;
+  font-size: 18px;
+  line-height: 25px;;
+  color: #676767;
+  margin-bottom: 8px;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background-color: #e1dce9;
+  margin-bottom: 130px;
+}
+
+
+/* START menu section */
+
+section {
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 1000px;
+  width: 550px;
+  margin-bottom: 140px;
+}
+
+
+.menu-items p {
+  margin-bottom: 40px;
+}
+
+.menu-subtext {
+  font-family: "Garamon8italic"; serif;
+  font-size: 15px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  color: #676767;
+  text-transform: lowercase;
+}
+
+hr {
+  border: 0.5px solid black;
+}
+
+.right {
+  float: right;
+}
+
+/* START footer HERE */
+
+footer {
+  width: 100%;
+  height: 700px;
+  position: relative;
+}
+
+.footer-title {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+}
+
+
+footer h2 {
+  color: #676767;
+  letter-spacing: 0;
+  font-size: 22px;
+}
+
+.footer-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+#navigation {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  line-height: 25px;
+}
+
+#navigation a {
+  text-decoration: none;
+  font-family: "Garamond8"; serif;
+  font-weight: lighter;
+  color: black;
+  font-size: 18px;
+}
+
+#navigation a:hover {
+  opacity: 0.5;
+}
+
+#contact {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15%;
+}
+
+#contact p {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  color: black;
+}
+
+#contact address {
+  margin-bottom: 10px;
+  font-family: "Garamond8"; serif;
+  font-weight: lighter;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #676767;
+}
+
+#contact br {
+  margin-bottom: 5px;
+}
+
+#hours {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-right: 3%;
+}
+
+#hours p {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  color: black;
+}
+
+#hours p span {
+  color: #676767;
+}
+
+.terms {
+  width: 100%;
+  height: 50px;
+  background-color: #e1dce9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.terms h5 {
+  font-size: 10px;
+  letter-spacing: 4px;
+  opacity: 0.5;
+}
+
+.terms a {
+  text-decoration: none;
+}
