@@ -306,3 +306,192 @@ footer h2 {
 .terms a {
   text-decoration: none;
 }
+
+/* pop up menu * original */
+
+.hamburger {
+  cursor: pointer;
+  position: fixed;
+  top: 45px;
+  right: 20px;
+  z-index: 1;
+}
+
+.line {
+  border-bottom: 2px solid #bebebe;
+  width: 35px;
+  margin-bottom: 8px;
+}
+
+.line:last-child {
+  margin-bottom: 0;
+}
+
+.menu-modal-background {
+  padding: 40px;
+  background-color: rgba(149, 149, 188, 1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Use Flexbox to center the modal-content (the white part) vertically and horizontally
+    https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/
+   */
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.menu-modal-content {
+  padding: 40px 20px;
+  /* color: white; */
+  width: 600px;
+  text-align: center;
+  position: relative;
+}
+
+.menu-modal-content h3 {
+  color: white;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 20px 0 10px 0;
+  font-size: 40px;
+  font-family: "Garamon12"; serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+
+.menu-modal-content h4 {
+  color: white;
+  letter-spacing: 1px;
+  padding-top: 50px;
+}
+
+.menu-modal-content a {
+  text-decoration: none;
+  color: white;
+  padding-top: 20px;
+}
+
+.menu-modal-content a:hover {
+  color: grey;
+  transition: 0.2s;
+  /* text-decoration: none; */
+}
+
+.menu-modal-content p {
+  color: black;
+  line-height: 50px;
+  font-size: 17px;
+  text-align: left;
+  /* padding-left: 15%; */
+}
+
+.menu-hide {
+  display: none;
+}
+
+#close-menu {
+  position: fixed;
+  right: 20px;
+  top: 35px;
+  border: none;
+  font-size: 40px;
+  outline: none;
+  background: none;
+  color: white;
+  font-family: "Abel", sans-serif;
+  cursor: pointer;
+}
+
+.menu-modal-content address {
+  margin-bottom: 10px;
+  font-family: "Garamond8"; serif;
+  font-weight: lighter;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: white;
+}
+
+@media screen and (max-width: 800px) {
+
+.menu-hide {
+    display: unset;
+}
+
+.nav-box {
+  display: none;
+}
+
+.phonenumber-box {
+  display: none;
+}
+
+.staff-container {
+  display: block;
+}
+
+.staff-image {
+  display: block;
+  text-align: center;
+}
+
+section {
+  width: 90vw;
+  height: 700px;
+}
+
+section h1 {
+  line-height: 0px;
+}
+
+.staff-copy {
+  margin-left: 0px;
+  margin-top: 30px;
+}
+
+.staff-copy p {
+  margin-left: 0px;
+}
+
+.staff-title {
+  margin-bottom: 50px;
+}
+
+}
+
+@media screen and (max-width: 500px) {
+
+h1 {
+  font-size: 34px;
+  line-height: 43px;
+}
+
+h2 {
+  font-size: 23px;
+}
+
+.footer-navigation {
+  display: block;
+}
+
+footer {
+  height: 1000px;
+}
+
+#contact {
+  padding-left: 10%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* text-align: center; */
+}
+
+.terms {
+  text-align: center;
+  line-height: 15px;
+}
+}

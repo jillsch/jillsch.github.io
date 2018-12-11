@@ -27,8 +27,13 @@
         <a href="contact.html">Contact</a>
       </div>
     </div>
+    <div class="hamburger menu-hide showMenu">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
     <div class="phonenumber-box">
-      <h3>(480) 209-2849</h3>
+      <h3>(480) 239-5441</h3>
     </div>
   </nav>
   <header>
@@ -41,17 +46,18 @@
       <img src="images/BotoxIcon.png" alt="face-icon">
     </div>
     <div class="modal-content">
-      <form action="">
-      <h5>Name*</h5>
-      <input type="text" id="name" placeholder="">
-      <h5>Email*</h5>
-      <input type="email" placeholder="">
-      <h5>Message</h5>
-      <textarea placeholder=""></textarea>
-      </form>
-      <div class="button-style">
-        <button id="submit" type="submit">Submit</button>
-      </div>
+      <form method="POST" action="https://formspree.io/YOUREMAILHERE">
+        <h5>Name*</h5>
+        <input type="text" name="name" id="name" placeholder="name">
+        <h5>Email*</h5>
+        <input type="email" name="_replyto" placeholder="email">
+        <h5>Message</h5>
+        <textarea type="text" name="message" placeholder="message"></textarea>
+        <div class="button-style">
+          <button type="submit">Submit</button>
+        </div>
+    </form>
+
     </div>
   </section>
   <footer>
@@ -76,7 +82,7 @@
         </address>
         <p>kenra@lupinewellness.com</p>
         <br>
-        <p>Tel: 480-209-2849</p>
+        <p>Tel: 480-239-5441</p>
       </div>
       <div id="hours">
         <h5>Hours</h5>
@@ -89,6 +95,29 @@
       <h5>©2018 LUPINE WELLNESS CENTER & MED SPA  |   <a href="#">SITE CREDIT</a></h5>
     </div>
   </footer>
-
+  <div class="menu-modal-background">
+    <div class="menu-modal-content">
+      <h3><a href="index.html">Home</a></h3>
+      <h3><a href="staff.html">Staff</a></h3>
+      <h3><a href="services.html">Services</a></h3>
+      <h3><a href="contact.html">Contact</a></h3>
+      <br>
+      <address>
+        5940 W. Union Hills Dr.<br>
+        Suite A-140<br>
+        Glendale, AZ 85308<br>
+        <br>
+        kenra@lupinewellness.com<br>
+        <br>
+        Tel: 480-239-5441<br>
+      </address>
+      <button id="close-menu">X</button>
+    </div>
+  </div>
 </body>
+<script
+src="https://code.jquery.com/jquery-3.2.1.min.js"
+integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+crossorigin="anonymous"></script>
+<script src="main.js"></script>
 </html>
