@@ -364,6 +364,10 @@ footer h2 {
   letter-spacing: 3px;
 }
 
+/* #home-menu {
+  padding-top: 80px;
+} */
+
 .menu-modal-content h4 {
   color: white;
   letter-spacing: 1px;
@@ -396,7 +400,7 @@ footer h2 {
 
 #close-menu {
   position: fixed;
-  right: 20px;
+  right: 0px;
   top: 35px;
   border: none;
   font-size: 40px;
@@ -418,6 +422,13 @@ footer h2 {
 }
 
 @media screen and (max-width: 800px) {
+  
+.logo-box {
+  display: block;
+  flex-grow: none;
+  text-align: center;
+  padding: 14px 0;
+}
 
 .menu-hide {
     display: unset;
@@ -493,5 +504,9 @@ footer {
 .terms {
   text-align: center;
   line-height: 15px;
+}
+
+.logo-box img {
+  margin-left: -20px;
 }
 }

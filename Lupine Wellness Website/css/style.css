@@ -593,8 +593,15 @@ address {
 
 @media screen and (max-width: 800px) {
 
+.logo-box {
+  display: block;
+  flex-grow: none;
+  text-align: center;
+  padding: 14px 0;
+}
+
 .menu-hide {
-    display: unset;
+  display: unset;
 }
 
 .nav-box {
@@ -607,19 +614,18 @@ address {
 }
 
 @media screen and (max-width: 650px) {
-
-.treatments {
-  display: block;
-}
-
-.treatmentsimage {
-  margin-bottom: 50px;
-
-}
-
-section {
-  height: 1450px;
+  .treatments {
+    display: block;
   }
+
+  .treatmentsimage {
+    margin-bottom: 50px;
+
+  }
+
+  section {
+    height: 1450px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -665,4 +671,7 @@ footer {
   text-align: center;
   line-height: 15px;
 }
+
+
+
 }
