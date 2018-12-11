@@ -422,7 +422,7 @@ footer h2 {
 }
 
 @media screen and (max-width: 800px) {
-  
+
 .logo-box {
   display: block;
   flex-grow: none;
@@ -508,5 +508,9 @@ footer {
 
 .logo-box img {
   margin-left: -20px;
+}
+
+.staff-image img {
+  max-height: 280px;
 }
 }
