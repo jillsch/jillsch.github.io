@@ -241,7 +241,6 @@ body {
   position: relative;
 }
 
-
 .contact_button {
   margin: auto;
   background-color: #444bfd;
@@ -424,6 +423,7 @@ textarea {
   font-family: "Abel", sans-serif;
   letter-spacing: 2px;
   outline: none;
+  cursor: pointer;
 }
 
 form {

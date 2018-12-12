@@ -607,6 +607,7 @@ textarea {
   font-family: "Abel", sans-serif;
   letter-spacing: 2px;
   outline: none;
+  cursor: pointer;
 }
 
 form {
