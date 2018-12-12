@@ -18,6 +18,21 @@ let categoryItemMax = {
 for(let i=0; i < sectionNamesArr.length; i++){
   let currentCategory = sectionNamesArr[i];
 
+
+  //
+  // '.logos #next'
+  // '.logos #previous'
+  // '.logos #samples_image img'
+  // '.logos .container_box article'
+
+  // '.websites #next'
+  // '.websites #previous'
+  // '.websites #samples_image img'
+  // '.websites .container_box article'
+
+
+//selectors
+
   const categoryNextSelector = '.' + currentCategory + ' #next';
   const categoryPreviousSelector = '.' + currentCategory + ' #previous';
   const categoryImageSelector = '.' + currentCategory + " #samples_image img";
@@ -30,6 +45,7 @@ for(let i=0; i < sectionNamesArr.length; i++){
   $(categoryTextSelector).hide();
   $(categoryTextSelector).eq(0).show();
 
+// attaching the click function (next) to each of the different sections
 
   $(categoryNextSelector).on("click", function() {
     let maxItems = categoryItemMax[currentCategory];
@@ -43,6 +59,9 @@ for(let i=0; i < sectionNamesArr.length; i++){
     $(categoryTextSelector).hide();
     $(categoryTextSelector).eq(categoryItemIndex[currentCategory]).show();
   });
+
+// attaching the click function (previous) to each of the different sections
+
 
   $(categoryPreviousSelector).on("click", function() {
     let maxItems = categoryItemMax[currentCategory];
